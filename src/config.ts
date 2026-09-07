@@ -36,6 +36,7 @@ const BUTTON_VERSE =
 const BUTTON_BODY =
     "41,41,41,41,02,21,21," + "11,01,11,21,82,42," + "21,21,21,21,02,11,11," + "21,01,21,11,22,42"
 
+export const BUTTON_GAP = 0.125
 export const BUTTON_DATA: number[][] = parseData(
     `08|1|${BUTTON_BASS}|4|${BUTTON_CHORDS},${BUTTON_VERSE},${BUTTON_CHORDS}|1|${BUTTON_BODY}|2|${BUTTON_VERSE}|1|${BUTTON_CODA}|2|${BUTTON_BODY}|2|${BUTTON_VERSE}|2|13`,
     0.25
@@ -88,7 +89,7 @@ export const THEME_MUSIC: TChannelProps[] = [
 export const SCORE_TABLE: THightScore[] = [
     ["GOD", 260, 55000],
     ["NEO", 200, 50000],
-    ["DEV", 100, 45000],
+    ["BRT", 100, 45000],
     ["FOX", 75, 40000],
     ["*FF", 50, 35000],
     ["RBM", 40, 30000],

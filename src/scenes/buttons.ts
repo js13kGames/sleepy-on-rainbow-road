@@ -8,7 +8,8 @@ import {
     COLOR_WHITE,
     DARK_YELLOW,
     FONT_REGULAR,
-    COLOR_BLACK
+    COLOR_BLACK,
+    BUTTON_GAP
 } from "../config"
 import { setColor } from "../modules/entity/components/color"
 import { isHover } from "../modules/entity/components/polygon"
@@ -108,7 +109,7 @@ async function setButton(index: number, down: boolean) {
         const [idx, btn, len, gap] = getCurrentData()
         setScale(up, down ? 0.9 : 1)
         if (down) {
-            const isHit = id & btn
+            const isHit = id & btn && gap < BUTTON_GAP
             emit(isHit ? "hit" : "miss", [idx, id, btn, gap])
             setColor(bg, isHit ? COLOR_HIGH : DARK_GREY)
             isHit && emitParticles(index)
@@ -123,15 +124,23 @@ async function setButton(index: number, down: boolean) {
 function onUpDown([key, event]: TEvent<string>) {
     const down = event !== "up"
     switch (key) {
+        case "KeyA":
+        case "KeyH":
         case "Digit1":
             setButton(0, down)
             break
+        case "KeyS":
+        case "KeyJ":
         case "Digit2":
             setButton(1, down)
             break
+        case "KeyD":
+        case "KeyK":
         case "Digit3":
             setButton(2, down)
             break
+        case "KeyF":
+        case "KeyL":
         case "Digit4":
             setButton(3, down)
             break

@@ -5,7 +5,8 @@ import {
     DARK_RED,
     COLOR_TRANSPARENT,
     DARK_YELLOW,
-    SPRITE_PTC
+    SPRITE_PTC,
+    BUTTON_GAP
 } from "../config"
 import { mixer, play } from "../modules/audio"
 import { setColor } from "../modules/entity/components/color"
@@ -56,12 +57,12 @@ function getCurrentTime() {
     return currentTime - ((music?.context as AudioContext)?.outputLatency ?? 0)
 }
 
-export function getCurrentData(threshold: number = 0.12) {
+export function getCurrentData(threshold: number = BUTTON_GAP) {
     const currentTime = getCurrentTime()
     let idx = 0
     for (const [btn, len, time] of BUTTON_DATA) {
         const gap = abs(currentTime - time)
-        if (gap <= threshold || time - threshold > currentTime) {
+        if (gap < threshold || time - threshold > currentTime) {
             return [idx, btn, len, gap]
         }
         btn && idx++
