@@ -87,16 +87,16 @@ export const THEME_MUSIC: TChannelProps[] = [
 ]
 
 export const SCORE_TABLE: THightScore[] = [
-    ["GOD", 260, 55000],
-    ["NEO", 200, 50000],
-    ["BRT", 100, 45000],
-    ["FOX", 75, 40000],
-    ["*FF", 50, 35000],
-    ["RBM", 40, 30000],
-    ["JAO", 30, 25000],
-    ["ANT", 20, 20000],
-    ["JON", 10, 15000],
-    ["NUB", 5, 10000],
+    ["GOD", 250, 50000],
+    ["NEO", 200, 45000],
+    ["BRT", 100, 40000],
+    ["FOX", 75, 35000],
+    ["*FF", 50, 30000],
+    ["RBM", 40, 25000],
+    ["JAO", 30, 20000],
+    ["ANT", 20, 15000],
+    ["JON", 10, 10000],
+    ["NUB", 5, 5000],
 ]
 
 export const SPRITE_PTC = createSprite("ptc", 3, 3, 1)
