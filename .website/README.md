@@ -1,0 +1,17 @@
+---
+directors_cut: https://tricsi.github.io/rainbow/build/
+video: https://youtu.be/URgDAgZWj8M
+# See github.com/js13kGames/hello-world for supported frontmatter
+---
+
+# Sleepy on Rainbow Road
+Arcade style rhythm game with retro 8bit vibes.
+
+## CONTROLS
+- 1, 2, 3, 4 buttons (or ASDF, HJKL keys)
+- Any key to start
+- Esc to stop
+- Touch controls on mobile
+
+## FICTIONAL STORY
+"The Adventures of Sleepy the Unicorn" was a successful animated series in the mid-1980s. In addition to toys and plush figures, an arcade machine based on the series was also produced. The machine was one of the earliest rhythm games, which made it particularly popular among girls. It was not considered a successful game at the time of its release, and only a small number of units were produced. Today, collectors regard it as a true rarity.
