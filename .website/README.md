@@ -1,4 +1,7 @@
 ---
+genres:
+  - music
+  - arcade
 directors_cut: https://tricsi.github.io/rainbow/build/
 video: https://youtu.be/URgDAgZWj8M
 # See github.com/js13kGames/hello-world for supported frontmatter
